@@ -66,7 +66,7 @@ function drawScore() {
 function drawLives() {
     ctx.font = "16px Arial";
     ctx.fillStyle = "#0095DD";
-    ctx.fillText("Lives:" + lives, canvas.width - 65, 20);
+    ctx.fillText("Lives:" + lives, canvas.width / 2, 20);
 }
 
 function drawBall() {
@@ -158,7 +158,7 @@ document.addEventListener("keyup", keyUpHandler, false);
 document.addEventListener("mousemove", mouseMoveHandler, false);
 
 function keyDownHandler(e) {
-    if(e.key == "Right" || e.key == "ArrowRight") {     //"Right"ÇÕIE/Edgeóp
+    if(e.key == "Right" || e.key == "ArrowRight") {     //"Right"‚Äö√çIE/Edge‚Äîp
         rightPressed = true;
     } else if(e.key == "Left" || e.key == "ArrowLeft") {
         leftPressed = true;
@@ -166,7 +166,7 @@ function keyDownHandler(e) {
 }
 
 function keyUpHandler(e) {
-    if(e.key == "Right" || e.key == "ArrowRight") {     //"Right"ÇÕIE/Edgeóp
+    if(e.key == "Right" || e.key == "ArrowRight") {     //"Right"‚Äö√çIE/Edge‚Äîp
         rightPressed = false;
     } else if (e.key == "Left" || e.key == "ArrowLeft") {
         leftPressed = false;
@@ -182,4 +182,4 @@ function mouseMoveHandler(e) {
 
 var interval = setInterval(draw, 10);
 
-//ìÆâÊ12:03Ç‹Ç≈
+//‚Äú¬Æ‚Ä∞√¶12:03‚Äö√ú‚Äö√Ö
